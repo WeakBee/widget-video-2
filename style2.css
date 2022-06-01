@@ -25,7 +25,8 @@
     cursor: pointer;
 }
 .bubble-widget-video video{
-    width: 100%;
+    width: 150%;
+    transform: translate(-32px,-70px);
 }
 .close-widget{
     z-index: 100;
@@ -65,19 +66,24 @@
     transform: translateY(0px);
 }
 .pauseplaybutton{
-    display: none;
     position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 40%;
-    left: 32%;
-    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #2f313750;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pauseplaybutton img{
+  width: 50%;
+  cursor: pointer;
 }
 .video-controls {
     opacity: 0;
     transform: translateY(-20px);
     width: 100%;
-    height: 20%;
+    height: 15%;
     top: 0;
     padding: 10px;
     position: absolute;

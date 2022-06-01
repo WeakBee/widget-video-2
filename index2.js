@@ -4,6 +4,7 @@ const volume = document.getElementById('volume');
 
 $( "#play" ).on( "click", function() {
     video.load();
+    $(".pauseplaybutton").hide();
 });
 
 $( "#volume-button" ).on( "click", function() {
@@ -29,6 +30,7 @@ $(".pparea").click(function(){
 $(".bubble-widget-video video").click(function(){
     $(".outer-widget").hide();
     $(".output-outer-widget").show();
+    $(".pauseplaybutton").hide();
     video.load();
     video.play();
 });
@@ -38,5 +40,6 @@ $(".close-bubble").click(function(){
 $(".close-output").click(function(){
     $(".outer-widget").show();
     $(".output-outer-widget").hide();
+    $(".pauseplaybutton").hide();
     video.pause();
 });
