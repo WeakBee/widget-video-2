@@ -60,7 +60,7 @@ $(".pparea").click(function(){
 });
 // ini buat munculin pause area
 
-// ini buat close widget
+// ini buat click bubble
 $(".bubble-widget-video video").click(function(){
     $(".outer-widget").hide();
     $(".output-outer-widget").show();
@@ -68,9 +68,13 @@ $(".bubble-widget-video video").click(function(){
     video.load();
     video.play();
 });
+// ini buat click bubble
+
+// ini buat close widget
 $(".close-bubble").click(function(){
     $(".outer-widget").hide();
 });
+
 $(".close-output").click(function(){
   video.setAttribute('src', 'https://eva-hr.com/other/videos/opening.mp4');
   $(".outer-widget").show();
