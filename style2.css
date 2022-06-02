@@ -146,26 +146,28 @@
 .question-frame{
   height: 100%;
   width: 100%;
+  padding-right: 10px;
   overflow: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #2f3137c9 #2f31375e; 
 }
 .question-frame::-webkit-scrollbar {
-  width: 1px;
+  width: 5px;
 }
 
 /* Track */
 .question-frame::-webkit-scrollbar-track {
-  background: transparent; 
+  background: #2f31375e; 
 }
  
 /* Handle */
 .question-frame::-webkit-scrollbar-thumb {
-  background: transparent; 
+  background: #2f3137c9; 
 }
 
 /* Handle on hover */
 .question-frame::-webkit-scrollbar-thumb:hover {
-  background: transparent; 
+  background: #2f3137; 
 }
 .question-card{
   background-color: #2f3137;
