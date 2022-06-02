@@ -5,6 +5,9 @@ const progressBar = document.getElementById('vidprogress-bar');
 const fillProgressbar = document.getElementById('filled-progress-bar');
 // Masukin Elemen elemen disini
 
+video.onwaiting = (event) => {
+  console.log('Video is waiting for more data.');
+};
 // ini buat tombol play/repeat
 $( "#play" ).on( "click", function() {
     video.load();
