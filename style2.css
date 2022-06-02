@@ -141,7 +141,6 @@
   width: 100%;
   height: 120px;
   padding: 10px 20px 0 20px;
-  
 }
 .question-frame{
   height: 100%;
@@ -170,13 +169,17 @@
   background: #2f3137; 
 }
 .question-card{
-  background-color: #2f3137;
+  background-color: #2f3137c9;
   color: white;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
   text-align: center;
   cursor: pointer;
+}
+
+.q-2{
+  display: none;
 }
 button {
   cursor: pointer;
