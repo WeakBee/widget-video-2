@@ -72,10 +72,13 @@ $(".close-bubble").click(function(){
     $(".outer-widget").hide();
 });
 $(".close-output").click(function(){
-    $(".outer-widget").show();
-    $(".output-outer-widget").hide();
-    $(".pauseplaybutton").hide();
-    video.pause();
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/opening.mp4');
+  $(".outer-widget").show();
+  $(".output-outer-widget").hide();
+  $(".pauseplaybutton").hide();
+  video.pause();
+  $(".q-2").hide();
+  $(".q-1").show();
 });
 // ini buat close widget
 
@@ -107,7 +110,4 @@ $(".q-2 .qc-2").click(function(){
   $(".q-2").hide();
   $(".q-1").show();
 });
-
-
-
 // Question nya
