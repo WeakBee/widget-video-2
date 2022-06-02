@@ -1,0 +1,18 @@
+/* CSS INI JANGAN DIPAKAI HANYA UNTUK CONTOH PAGE KALO DI SCROLL AJA */
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+.contoh{
+    width: 100vw;
+    height: 100vh;
+}
+.contoh:nth-child(1){
+    background-color: aqua;
+}
+.contoh:nth-child(2){
+    background-color: yellow;
+}
+.contoh:nth-child(3){
+    background-color: red;
+}
