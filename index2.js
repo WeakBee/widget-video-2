@@ -88,6 +88,7 @@ $(".close-output").click(function(){
 
 // ini buat click bubble
 $(".back").click(function(){
+  $( "#outputvid" ).addClass( "openingvid" );
   video.setAttribute('src', 'https://eva-hr.com/other/videos/opening.mp4');
   $(".q-2").hide();
   $(".q-1").show();
@@ -97,17 +98,20 @@ $(".back").click(function(){
 
 // ini buat delay question muncul di awal
 video.addEventListener('timeupdate', () =>{
-  if (video.currentTime >= 4){
-    $(".q-1").show();
-  }
-  if (video.currentTime >= 4.5){
-    $(".q-1").css('opacity', '1');
+  if ($("#outputvid").hasClass("openingvid")) {
+    if (video.currentTime >= 4){
+      $(".q-1").show();
+    }
+    if (video.currentTime >= 4.5){
+      $(".q-1").css('opacity', '1');
+    }
   }
 });
 // ini buat delay question muncul di awal
 
 // Question nya
 $(".q-1 .qc-1").click(function(){
+  $( "#outputvid" ).removeClass( "openingvid" );
   video.setAttribute('src', 'https://eva-hr.com/other/videos/1-ERP-adalah.mp4');
   $(".back").show();
   $(".q-1").hide();
@@ -115,6 +119,7 @@ $(".q-1 .qc-1").click(function(){
 });
 
 $(".q-1 .qc-2").click(function(){
+  $( "#outputvid" ).removeClass( "openingvid" );
   video.setAttribute('src', 'https://eva-hr.com/other/videos/6-Apakah-demo-nya-gratis.mp4');
   $(".back").show();
   $(".q-1").hide();
@@ -122,6 +127,7 @@ $(".q-1 .qc-2").click(function(){
 });
 
 $(".q-2 .qc-1").click(function(){
+  $( "#outputvid" ).addClass( "openingvid" );
   video.setAttribute('src', 'https://eva-hr.com/other/videos/opening.mp4');
   $(".outer-widget").show();
   $(".output-outer-widget").hide();
