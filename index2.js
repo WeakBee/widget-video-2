@@ -84,6 +84,7 @@ $(".close-output").click(function(){
   video.pause();
   $(".q-2").hide();
   $(".q-1").show();
+  $(".back").hide();
 });
 // ini buat close widget
 
@@ -139,6 +140,7 @@ $(".q-2 .qc-1").click(function(){
   video.pause();
   $(".q-2").hide();
   $(".q-1").show();
+  $(".back").hide();
 });
 
 // Question nya
