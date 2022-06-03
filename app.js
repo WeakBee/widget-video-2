@@ -26,10 +26,10 @@ $( "#play" ).on( "click", function() {
 $( "#volume-button" ).on( "click", function() {
     video.muted = !video.muted;
   if (video.muted) {
-    $(".speakerimg").attr("src","Mute_Icon.svg");
+    $(".speakerimg").attr("src","Assets/Mute_Icon.svg");
     volume.value = 0;
   } else {
-    $(".speakerimg").attr("src","Speaker_Icon.svg");
+    $(".speakerimg").attr("src","Assets/Speaker_Icon.svg");
     volume.value = 100;
   }
 });
