@@ -18,6 +18,7 @@ video.onplaying = (event) => {
 $( "#play" ).on( "click", function() {
     video.load();
     $(".pauseplaybutton").hide();
+    video.play();
 });
 // ini buat tombol play/repeat
 
