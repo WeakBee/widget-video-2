@@ -108,6 +108,10 @@
 .volume-button{
   right: 4px;
 }
+.back{
+  display: none;
+  filter: invert();
+}
 #play{
   transition: 0.5s;
   margin-right: 15px;

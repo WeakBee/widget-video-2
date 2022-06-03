@@ -86,15 +86,27 @@ $(".close-output").click(function(){
 });
 // ini buat close widget
 
+// ini buat click bubble
+$(".back").click(function(){
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/opening.mp4');
+  $(".q-2").hide();
+  $(".q-1").show();
+  $(".back").hide();
+});
+// ini buat click bubble
+
+
 // Question nya
 $(".q-1 .qc-1").click(function(){
   video.setAttribute('src', 'https://eva-hr.com/other/videos/1-ERP-adalah.mp4');
+  $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
 });
 
 $(".q-1 .qc-2").click(function(){
   video.setAttribute('src', 'https://eva-hr.com/other/videos/6-Apakah-demo-nya-gratis.mp4');
+  $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
 });
@@ -109,9 +121,4 @@ $(".q-2 .qc-1").click(function(){
   $(".q-1").show();
 });
 
-$(".q-2 .qc-2").click(function(){
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/opening.mp4');
-  $(".q-2").hide();
-  $(".q-1").show();
-});
 // Question nya
