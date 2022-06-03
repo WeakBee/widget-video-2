@@ -185,8 +185,11 @@
   text-align: center;
   cursor: pointer;
 }
-
-.q-2{
+.q-1{
+  opacity: 0;
+  transition: 0.5s;
+}
+.q-2 {
   display: none;
 }
 .loading{

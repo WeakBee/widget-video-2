@@ -95,6 +95,13 @@ $(".back").click(function(){
 });
 // ini buat click bubble
 
+// ini buat delay question muncul di awal
+video.addEventListener('timeupdate', () =>{
+  if (video.currentTime >= 4.5){
+    $(".q-1").css('opacity', '1');
+  }
+});
+// ini buat delay question muncul di awal
 
 // Question nya
 $(".q-1 .qc-1").click(function(){
