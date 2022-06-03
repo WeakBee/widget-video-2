@@ -93,6 +93,7 @@ $(".back").click(function(){
   $(".q-2").hide();
   $(".q-1").show();
   $(".back").hide();
+  video.play();
 });
 // ini buat click bubble
 
@@ -116,6 +117,7 @@ $(".q-1 .qc-1").click(function(){
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
+  video.play();
 });
 
 $(".q-1 .qc-2").click(function(){
@@ -124,6 +126,7 @@ $(".q-1 .qc-2").click(function(){
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
+  video.play();
 });
 
 $(".q-2 .qc-1").click(function(){
