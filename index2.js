@@ -97,6 +97,9 @@ $(".back").click(function(){
 
 // ini buat delay question muncul di awal
 video.addEventListener('timeupdate', () =>{
+  if (video.currentTime >= 4){
+    $(".q-1").show();
+  }
   if (video.currentTime >= 4.5){
     $(".q-1").css('opacity', '1');
   }
