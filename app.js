@@ -3,6 +3,8 @@ const video = document.getElementById('outputvid');
 const volume = document.getElementById('volume');
 const progressBar = document.getElementById('vidprogress-bar');
 const fillProgressbar = document.getElementById('filled-progress-bar');
+const currentTimeElement = document.querySelector(".current");
+const durationTimeElement = document.querySelector(".duration");
 // Masukin Elemen elemen disini
 
 // Untuk loading
@@ -34,6 +36,20 @@ $( "#volume-button" ).on( "click", function() {
   }
 });
 // ini buat tombol volume
+
+// Ini buat timer dan duration
+const currentTime = () => {
+  let currentMinutes = Math.floor(video.currentTime /60);
+  let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60);
+  let durationMinutes = Math.floor(parseFloat(video.duration / 60));
+  let durationSeconds = Math.floor(parseFloat(video.duration - durationMinutes * 60));
+
+  currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0' + currentSeconds : currentSeconds}`
+  durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds < 10 ? '0' + durationSeconds : durationSeconds}`
+}
+
+video.addEventListener('timeupdate', currentTime);
+// Ini buat timer dan duration
 
 // ini buat Progress bar nya jalan
 video.addEventListener('timeupdate', () =>{
