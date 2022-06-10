@@ -78,7 +78,7 @@ $(".pparea").click(function(){
 // ini buat munculin pause area
 
 // ini buat click bubble
-$(".bubble-widget-video video").click(function(){
+$(".bubble-widget-video").click(function(){
     $(".outer-widget").hide();
     $(".output-outer-widget").show();
     $(".pauseplaybutton").hide();
