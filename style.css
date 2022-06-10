@@ -24,6 +24,7 @@
     height: 400px;
 }
 .bubble-widget-video{
+    position: relative;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -35,6 +36,23 @@
 .bubble-widget-video video{
     width: 150%;
     transform: translate(-32px,-70px);
+}
+.darkbg{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+.hubungikami{
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-weight: 800;
+  font-size: 13px;
 }
 .close-widget{
     z-index: 100;
