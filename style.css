@@ -6,10 +6,10 @@
 }
 .outer-widget{
     position: fixed;
-    bottom: 40px;
-    left: 40px;
-    width: 120px;
-    height: 120px;
+    bottom: 30px;
+    left: 35px;
+    width: 160px;
+    height: 160px;
     transition: 0.5s;
 }
 .outer-widget:hover{
@@ -20,8 +20,8 @@
     position: fixed;
     bottom: 40px;
     left: 40px;
-    width: 280px;
-    height: 430px;
+    width: 300px;
+    height: 520px;
 }
 .bubble-widget-video{
     position: relative;
@@ -29,13 +29,13 @@
     width: 100%;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px var(--hashred) solid;
+    border: 6px var(--hashred) solid;
     cursor: pointer;
     box-shadow: 0px 0px 10px #2f313759;
 }
 .bubble-widget-video video{
     width: 150%;
-    transform: translate(-32px,-70px);
+    transform: translate(-40px,-90px);
 }
 .darkbg{
   position: absolute;
@@ -47,12 +47,12 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.192);
 }
-.hubungikami{
+.outer-widget .hubungikami{
   position: absolute;
   z-index: 10;
   color: white;
   font-weight: 800;
-  font-size: 11px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .close-widget{
@@ -61,11 +61,11 @@
     justify-content: center ;
     align-items: center ;
     position: absolute ;
-    width: 4vh ;
-    height: 4vh ;
+    width: 25px ;
+    height: 25px ;
     border-radius: 50% ;
-    top: -1vh ;
-    right: -1vh ;
+    top: 5px ;
+    right: 5px ;
     color: #353535 ;
     cursor: pointer ;
     background: #2f3137 ;
@@ -75,6 +75,10 @@
 }
 .close-widget:hover{
   transform: rotate(180deg);
+}
+.output-outer-widget .close-widget{
+  top: -10px ;
+  right: -10px ;
 }
 .output-widget-video{
   position: relative;
