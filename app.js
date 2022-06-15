@@ -93,7 +93,7 @@ $(".close-bubble").click(function(){
 });
 
 $(".close-output").click(function(){
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/opening.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
   $(".outer-widget").show();
   $(".output-outer-widget").hide();
   $(".pauseplaybutton").hide();
@@ -107,7 +107,7 @@ $(".close-output").click(function(){
 // ini buat click bubble
 $(".back").click(function(){
   $( "#outputvid" ).addClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/opening.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
   $(".q-2").hide();
   $(".q-1").show();
   $(".back").hide();
@@ -131,7 +131,7 @@ video.addEventListener('timeupdate', () =>{
 // Question nya
 $(".q-1 .qc-1").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/1-ERP-adalah.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/1.Erp Adalah.m4v');
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -140,7 +140,7 @@ $(".q-1 .qc-1").click(function(){
 
 $(".q-1 .qc-2").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/2-ERP-itu-cocok-untuk-perusahaan-seperti-apa.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/2-Erp-Itu-Cocok-Untuk-Perusahaan-Seperti-Apa.m4v');
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -149,7 +149,7 @@ $(".q-1 .qc-2").click(function(){
 
 $(".q-1 .qc-3").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/3-Introduction-to-Hashmicro-product.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/3-Introduction-To-Hashmicro-Product.m4v');
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -159,7 +159,7 @@ $(".q-1 .qc-3").click(function(){
 
 $(".q-1 .qc-4").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/4-Keunggulan-Hashmicro.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/4-Keunggulan-Hashmicro.m4v');
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -168,7 +168,7 @@ $(".q-1 .qc-4").click(function(){
 
 $(".q-1 .qc-5").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/5-Proses-Implementasi.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/5-Proses-Implementasi.m4v');
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -177,7 +177,7 @@ $(".q-1 .qc-5").click(function(){
 
 $(".q-1 .qc-6").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/6-Apakah-demo-nya-gratis.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/6-Apakah-Demo-Nya-Gratis.m4v');
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -186,7 +186,7 @@ $(".q-1 .qc-6").click(function(){
 
 $(".q-2 .qc-1").click(function(){
   $( "#outputvid" ).addClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/opening.mp4');
+  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
   $(".outer-widget").show();
   $(".output-outer-widget").hide();
   $(".pauseplaybutton").hide();
