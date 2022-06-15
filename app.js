@@ -1,3 +1,9 @@
+$(window).on('load', function () {
+  var $afterload = $('#afterload');
+  
+  $afterload.replaceWith( '<div class="outer-widget">'+ $afterload.html() +'</div>');
+});
+
 // Masukin Elemen elemen disini
 const video = document.getElementById('outputvid');
 const volume = document.getElementById('volume');
@@ -77,20 +83,21 @@ $(".pparea").click(function(){
 });
 // ini buat munculin pause area
 
+
 // ini buat click bubble
-$(".bubble-widget-video").click(function(){
-    $(".outer-widget").hide();
-    $(".output-outer-widget").show();
-    $(".pauseplaybutton").hide();
-    video.load();
-    video.play();
-});
+function klikBubble(){
+  $(".outer-widget").hide();
+  $(".output-outer-widget").show();
+  $(".pauseplaybutton").hide();
+  video.load();
+  video.play();
+};
 // ini buat click bubble
 
 // ini buat close widget
-$(".close-bubble").click(function(){
-    $(".outer-widget").hide();
-});
+function closeBubble(){
+  $(".outer-widget").hide();
+}
 
 $(".close-output").click(function(){
   video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
