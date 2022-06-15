@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 :root{
+  --hashreddark: rgb(173, 15, 31);
     --hashred: #BE1C2Bff;
 }
 .outer-widget{
@@ -178,6 +179,7 @@
   position: absolute;
   font-size: 13px;
   color: #2f3137;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .duration{
   font-weight: 600;
@@ -195,32 +197,35 @@
 .question{
   position: absolute;
   bottom: 0;
+  max-height: 220px;
   width: 100%;
-  height: 120px;
   padding: 10px 20px 0 20px;
+  
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #2f3137c9 #2f31375e; 
+}
+.q-2{
 }
 .question-frame{
   height: 100%;
   width: 100%;
   padding-right: 10px;
-  overflow: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #2f3137c9 #2f31375e; 
 }
-.question-frame::-webkit-scrollbar {
-  width: 5px;
+.question::-webkit-scrollbar {
+  width: 7px;
 }
 
-.question-frame::-webkit-scrollbar-track {
+.question::-webkit-scrollbar-track {
   background: #2f31375e; 
 }
  
-.question-frame::-webkit-scrollbar-thumb {
-  background: #2f3137c9; 
+.question::-webkit-scrollbar-thumb {
+  background: var(--hashreddark); 
 }
 
-.question-frame::-webkit-scrollbar-thumb:hover {
-  background: #2f3137; 
+.question::-webkit-scrollbar-thumb:hover {
+  background: var(--hashred); 
 }
 
 .question-card{
