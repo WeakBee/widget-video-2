@@ -35,7 +35,7 @@
 }
 .bubble-widget-video video{
     width: 150%;
-    transform: translate(-40px,-90px);
+    transform: translate(-35px,-90px);
 }
 .darkbg{
   position: absolute;
