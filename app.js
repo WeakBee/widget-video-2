@@ -141,77 +141,31 @@ video.addEventListener('timeupdate', () =>{
 // ini buat delay question muncul di awal
 
 // ini untuk ngambil elemen question
-const qc1 = document.querySelector('.qc-1');
-const qc2 = document.querySelector('.qc-2');
-const qc3 = document.querySelector('.qc-3');
-const qc4 = document.querySelector('.qc-4');
-const qc5 = document.querySelector('.qc-5');
-const qc6 = document.querySelector('.qc-6');
+let numb = document.querySelector(".q-1 .question-frame").children.length;
+console.log(numb);
+
+let questionCard = [];
+let qc = [];
+for (i = 1; i <= numb;i++){
+  qc[i] = ".qc-"+i;
+  questionCard[i] = document.querySelector(qc[i]);
+}
 // ini untuk ngambil elemen question
 
 // ini untuk ngambil attribute link video setiap question
-let linkvid1 = qc1.getAttribute('sumbervid');
-let linkvid2 = qc2.getAttribute('sumbervid');
-let linkvid3 = qc3.getAttribute('sumbervid');
-let linkvid4 = qc4.getAttribute('sumbervid');
-let linkvid5 = qc5.getAttribute('sumbervid');
-let linkvid6 = qc6.getAttribute('sumbervid');
+let linkvid = [];
+for (i = 1; i <= numb;i++){
+  linkvid[i] = questionCard[i].getAttribute('sumbervid');
+}
 // ini untuk attribute link video setiap question
 
 // Question nya
-$(".q-1 .qc-1").click(function(){
+function fungsiquestion(no){
+  video.setAttribute('src', linkvid[no]);
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', linkvid1);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
   video.play();
-});
-
-$(".q-1 .qc-2").click(function(){
-  $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', linkvid2);
-  $(".back").show();
-  $(".q-1").hide();
-  $(".q-2").show();
-  video.play();
-});
-
-$(".q-1 .qc-3").click(function(){
-  $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', linkvid3);
-  $(".back").show();
-  $(".q-1").hide();
-  $(".q-2").show();
-  video.play();
-});
-
-
-$(".q-1 .qc-4").click(function(){
-  $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', linkvid4);
-  $(".back").show();
-  $(".q-1").hide();
-  $(".q-2").show();
-  video.play();
-});
-
-$(".q-1 .qc-5").click(function(){
-  $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', linkvid5);
-  $(".back").show();
-  $(".q-1").hide();
-  $(".q-2").show();
-  video.play();
-});
-
-$(".q-1 .qc-6").click(function(){
-  $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', linkvid6);
-  $(".back").show();
-  $(".q-1").hide();
-  $(".q-2").show();
-  video.play();
-});
-
+}
 // Question nya
