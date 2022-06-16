@@ -94,13 +94,18 @@ function klikBubble(){
 };
 // ini buat click bubble
 
+// ini untuk ngambil link source video opening
+const opening = document.querySelector('.openingvid');
+let linkvidOpening = opening.getAttribute('src');
+// ini untuk ngambil link source video opening
+
 // ini buat close widget
 function closeBubble(){
   $(".outer-widget").hide();
 }
 
 $(".close-output").click(function(){
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
+  video.setAttribute('src', linkvidOpening);
   $(".outer-widget").show();
   $(".output-outer-widget").hide();
   $(".pauseplaybutton").hide();
@@ -114,7 +119,7 @@ $(".close-output").click(function(){
 // ini buat click bubble
 $(".back").click(function(){
   $( "#outputvid" ).addClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
+  video.setAttribute('src', linkvidOpening);
   $(".q-2").hide();
   $(".q-1").show();
   $(".back").hide();
@@ -135,10 +140,28 @@ video.addEventListener('timeupdate', () =>{
 });
 // ini buat delay question muncul di awal
 
+// ini untuk ngambil elemen question
+const qc1 = document.querySelector('.qc-1');
+const qc2 = document.querySelector('.qc-2');
+const qc3 = document.querySelector('.qc-3');
+const qc4 = document.querySelector('.qc-4');
+const qc5 = document.querySelector('.qc-5');
+const qc6 = document.querySelector('.qc-6');
+// ini untuk ngambil elemen question
+
+// ini untuk ngambil attribute link video setiap question
+let linkvid1 = qc1.getAttribute('sumbervid');
+let linkvid2 = qc2.getAttribute('sumbervid');
+let linkvid3 = qc3.getAttribute('sumbervid');
+let linkvid4 = qc4.getAttribute('sumbervid');
+let linkvid5 = qc5.getAttribute('sumbervid');
+let linkvid6 = qc6.getAttribute('sumbervid');
+// ini untuk attribute link video setiap question
+
 // Question nya
 $(".q-1 .qc-1").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/1.Erp Adalah.m4v');
+  video.setAttribute('src', linkvid1);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -147,7 +170,7 @@ $(".q-1 .qc-1").click(function(){
 
 $(".q-1 .qc-2").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/2-Erp-Itu-Cocok-Untuk-Perusahaan-Seperti-Apa.m4v');
+  video.setAttribute('src', linkvid2);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -156,7 +179,7 @@ $(".q-1 .qc-2").click(function(){
 
 $(".q-1 .qc-3").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/3-Introduction-To-Hashmicro-Product.m4v');
+  video.setAttribute('src', linkvid3);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -166,7 +189,7 @@ $(".q-1 .qc-3").click(function(){
 
 $(".q-1 .qc-4").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/4-Keunggulan-Hashmicro.m4v');
+  video.setAttribute('src', linkvid4);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -175,7 +198,7 @@ $(".q-1 .qc-4").click(function(){
 
 $(".q-1 .qc-5").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/5-Proses-Implementasi.m4v');
+  video.setAttribute('src', linkvid5);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
@@ -184,23 +207,11 @@ $(".q-1 .qc-5").click(function(){
 
 $(".q-1 .qc-6").click(function(){
   $( "#outputvid" ).removeClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/6-Apakah-Demo-Nya-Gratis.m4v');
+  video.setAttribute('src', linkvid6);
   $(".back").show();
   $(".q-1").hide();
   $(".q-2").show();
   video.play();
-});
-
-$(".q-2 .qc-1").click(function(){
-  $( "#outputvid" ).addClass( "openingvid" );
-  video.setAttribute('src', 'https://eva-hr.com/other/videos/480/compress/Opening.m4v');
-  $(".outer-widget").show();
-  $(".output-outer-widget").hide();
-  $(".pauseplaybutton").hide();
-  video.pause();
-  $(".q-2").hide();
-  $(".q-1").show();
-  $(".back").hide();
 });
 
 // Question nya
