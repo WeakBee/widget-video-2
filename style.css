@@ -205,7 +205,8 @@
   scrollbar-width: thin;
   scrollbar-color: #2f3137c9 #2f31375e; 
 }
-.q-2{
+.q-2 a{
+  text-decoration: none;
 }
 .question-frame{
   height: 100%;
